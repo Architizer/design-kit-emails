@@ -11,8 +11,9 @@ th.column {
 }
 
 hr {
-  color: $light-gray;
-  margin: 0;
+  border-top: 0;
+  border-bottom: 1px solid #F3F3F3;
+  margin: 20px 0 30px;
 }
 
 //Typography
@@ -22,6 +23,7 @@ h3,
 h4, 
 h5 {
   letter-spacing: 0.3px !important;
+  line-height: 1.5;
 }
 
 h6 {
@@ -50,4 +52,9 @@ h6 {
   background-position: center;
   background-size: cover;
   height: 350px;
+}
+.article-image {
+  background-position: center;
+  background-size: cover;
+  height: 150px;
 }
