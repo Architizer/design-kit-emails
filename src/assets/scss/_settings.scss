@@ -24,7 +24,7 @@ $alert-color: #ec5840;
 $light-gray: #F7F9FA;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
+$black: #292929;
 $white: #fefefe;
 $pre-color: #ff6908;
 $global-width: 580px;
@@ -42,7 +42,7 @@ $global-breakpoint: $global-width + $global-gutter;
 // -------
 
 $grid-column-count: 12;
-$column-padding-bottom: $global-padding;
+$column-padding-bottom: 10px;
 $container-radius: 0;
 
 // 3. Block Grid
@@ -68,9 +68,9 @@ $h1-font-size: 34px;
 $h2-font-size: 30px;
 $h3-font-size: 28px;
 $h4-font-size: 24px;
-$h5-font-size: 20px;
-$h6-font-size: 18px;
-$header-margin-bottom: 10px;
+$h5-font-size: 16px;
+$h6-font-size: 14px;
+$header-margin-bottom: 6px;
 $paragraph-margin-bottom: 10px;
 $small-font-size: 80%;
 $small-font-color: $medium-gray;
@@ -132,8 +132,8 @@ $callout-border-alert: 1px solid darken($alert-color, 20%);
 // 7. Menu
 // -------
 
-$menu-item-padding: 10px;
-$menu-item-gutter: 10px;
+$menu-item-padding: 0;
+$menu-item-gutter: 4px;
 $menu-item-color: $primary-color;
 
 // 8. Thumbnail
