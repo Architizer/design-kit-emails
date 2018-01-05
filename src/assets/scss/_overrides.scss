@@ -1,0 +1,21 @@
+// Grid
+td.columns,
+td.column,
+th.columns,
+th.column {
+  padding-left: $global-gutter;
+}
+
+.container.transparent {
+  background-color: transparent;
+}
+
+//Typography
+.serif {
+  font-family: $body-font-family-serif;
+}
+
+.date {
+  color: $dark-gray;
+  font-weight: 300;
+}
