@@ -10,12 +10,44 @@ th.column {
   background-color: transparent;
 }
 
+hr {
+  color: $light-gray;
+  margin: 0;
+}
+
 //Typography
+h1,
+h2,
+h3,
+h4, 
+h5 {
+  letter-spacing: 0.3px !important;
+}
+
+h6 {
+  font-variant: small-caps;
+  font-weight: 600;
+  letter-spacing: .0035em;
+}
+
 .serif {
   font-family: $body-font-family-serif;
+  line-height: 1.65;
+  letter-spacing: .02em;
+}
+
+.more-link {
+  font-size: 12px;
 }
 
 .date {
   color: $dark-gray;
   font-weight: 300;
+}
+
+// Images
+.feature-image {
+  background-position: center;
+  background-size: cover;
+  height: 350px;
 }
