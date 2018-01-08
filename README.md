@@ -9,7 +9,7 @@ Everytime you save your working file, Inky will compile the HTML for you. When y
 
 Refer to [Foundation for Emails](http://foundation.zurb.com/emails/docs/") for help setting up your environment, learn about writing in Inky and general documentation.
 
-Installation instructions [here] (installation.md)
+Installation instructions [here](/installation.md)
 
 ## Foundation for Emails Template
 
