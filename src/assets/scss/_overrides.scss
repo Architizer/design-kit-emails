@@ -1,3 +1,8 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 // Grid
 td.columns,
 td.column,
@@ -17,21 +22,26 @@ hr {
 }
 
 //Typography
+// @import url('https://design-kit.arc.ht/fonts/avenir_next/avenir_next.css');
+
 h1,
 h2,
 h3,
 h4, 
 h5 {
+  font-family: $body-font-family;
   letter-spacing: 0.3px !important;
   line-height: 1.5;
-  font-weight: 500;
 }
 
 h6 {
   font-variant: small-caps;
   text-transform: lowercase;
-  font-weight: 500;
-  letter-spacing: .3px;
+  letter-spacing: .5px;
+}
+
+p {
+  color: $dark-gray;
 }
 
 .serif {
@@ -50,16 +60,14 @@ h6 {
   font-size: 12px;
 }
 
-.footer-text {
-  color: $black;
+p.footer-text {
+  color: $dark-gray;
   line-height: 1.65;
   letter-spacing: 0.2px;
   font-size: 11px;
-}
-
-.date {
-  color: $dark-gray;
-  font-weight: 300;
+  a {
+    color: $black;
+  }
 }
 
 // Images
@@ -67,20 +75,21 @@ h6 {
   height: 350px;
   width: 100%;
   object-fit: cover;
-  // background-position: center;
-  // background-size: cover;
 }
 .article-image {
   height: 150px;
   width: 100%;
   object-fit: cover;
   margin-bottom: 4px;
-  // background-position: center;
-  // background-size: cover;
 }
 
-.banner-image {
-
+.banner {
+  border-radius: 3px;
+  h5 {
+    color: $white;
+    margin: 10px 16px 0;
+    margin-bottom: 0;
+  }
 }
 
 // Utilities

@@ -16,6 +16,9 @@
 // 1. Global
 // ---------
 
+$quicksilver: #859DAF;
+$gunmetal: #B8C8D1;
+
 $primary-color: #2199e8;
 $secondary-color: #777777;
 $success-color: #3adb76;
@@ -23,10 +26,12 @@ $warning-color: #ffae00;
 $alert-color: #ec5840;
 $light-gray: #F7F9FA;
 $medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #292929;
+$dark-gray: #5E647D;
+// $dark-gray: #8a8a8a;
+$black: #292D3E;
 $white: #fefefe;
 $pre-color: #ff6908;
+
 $global-width: 580px;
 $global-width-small: 95%;
 $global-gutter: 40px;
@@ -70,7 +75,7 @@ $h3-font-size: 24px;
 $h4-font-size: 20px;
 $h5-font-size: 18px;
 $h6-font-size: 13px;
-$header-margin-bottom: 6px;
+$header-margin-bottom: 2px;
 $paragraph-margin-bottom: 10px;
 $small-font-size: 80%;
 $small-font-color: $medium-gray;
