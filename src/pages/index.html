@@ -1,6 +1,6 @@
 ---
 layout: index-layout
-subject: My Email Templates
+subject: Architizer Email Templates
 ---
 
 <spacer size="16"></spacer>
@@ -12,14 +12,24 @@ subject: My Email Templates
   <row>
     <columns small="12">
 
-    <p class="lead">Hi there!</p>
-    <p style="color: #484848; line-height: 1.5;">Thanks for downloading <a href="http://foundation.zurb.com/emails/docs/">Foundation for Emails!</a> Your days of coding up painful HTML emails are officially over. You’ll soon be cranking out some slick, responsive emails in no time! To help get you up and running, we've put together 11 templates for the most common email use cases including newsletters, transactional emails, and marketing blasts. Feel free to customize them to your hearts content.</p>
+    <h3>Architizer Email Kit</h3>
 
-    <spacer size="16"></spacer>
+    <p style="line-height: 1.5;">
+    This kit will allow Architizer designers, engineers and marketers to generate the HTML for our emails in a controlled and consistent mannerthe need to worry about crazy email HTML table structures and browser consistency. The design team will build templates that "just work" and drop them here for you to build without having to worry about styling at all…just get the content in there.</p>
 
-    <center>
+    <p style="line-height: 1.5;">
+    To use the kit, you first need to download and run the kit, which if you're reading this you already have. To build an email, open the template example from the 'src/pages' folder in your text editor and replace the placeholder content and links with the new content. You'll notice no tables or any crazy HTML. That's because these are written in a compiler called Inky, which compiles the finished email to the appropriate HTML. Using Inky allows us to read the code more clearly so we can see exactly where to add and edit content without error and allows us to troubleshoot better as well. Don't edit any styles, spacing, color, or anything, all of this should have been setup by the design team, so if you need anything changed then ask them.</p>
+
+    <p style="line-height: 1.5;">
+    Everytime you save your working file, Inky will compile the HTML for you. When you are done adding your content and you are pleased with the way it looks, go to the '/dist' folder and find the .html file of the same name…this is the compiled version of your email. It might look crazy but it will work. Copy this code (make sure its from the /dist folder!) and take it to test in Litmus (these templates have already been tested so if you added the content correctly then you shouldn't have to worry about the tests, but always run them), and then to Eloqua to finalize content and send it out.</p>
+
+    <p style="line-height: 1.5;">Refer to <a href="http://foundation.zurb.com/emails/docs/">Foundation for Emails</a> for help setting up your environment, learn about writing in Inky and general documentation.</p>
+
+    <h4>Templates</h4>
+
       <menu class="vertical">
-        <item href="{{root}}journal.html" target="_blank">Journal Template</item>
+        <item href="{{root}}journal-blank.html" target="_blank">Journal Newsletter Template - Blank</item>
+        <item href="{{root}}journal.html" target="_blank">Journal Newsletter Template - Example</item>
 <!--         <item href="{{root}}drip.html" target="_blank">Drip Template</item>
         <item href="{{root}}hero.html" target="_blank">Hero Template</item>
         <item href="{{root}}marketing.html" target="_blank">Marketing Template</item>
@@ -31,12 +41,11 @@ subject: My Email Templates
         <item href="{{root}}sidebar-hero.html" target="_blank">Sidebar Hero Template</item>
         <item href="{{root}}welcome.html" target="_blank">Welcome Template</item> -->
       </menu>
-    </center>
 
     <spacer size="16"></spacer>
 
-    <p>Happy Coding,</p>
-    <p>The Foundation Team</p>
+    <p>Get building!</p>
+    <p>Architizer Design</p>
 
 
     <spacer size="16"></spacer>
@@ -48,7 +57,7 @@ subject: My Email Templates
 <spacer size="16"></spacer>
 
 <center>
-  <small>Keep on keepin' on. &lt;3 <a style="color: #cacaca; text-decoration: underline;" href="http://zurb.com/">ZURB</a> </small>
+  <small>A product of <a style="color: #cacaca; text-decoration: underline;" href="https://design-kit.arc.ht/docs/index.html">Architizer Design Kit</a> </small>
 </center>
 
 <spacer size="16"></spacer>
