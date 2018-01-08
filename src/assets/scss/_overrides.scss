@@ -24,12 +24,14 @@ h4,
 h5 {
   letter-spacing: 0.3px !important;
   line-height: 1.5;
+  font-weight: 500;
 }
 
 h6 {
   font-variant: small-caps;
-  font-weight: 600;
-  letter-spacing: .0035em;
+  text-transform: lowercase;
+  font-weight: 500;
+  letter-spacing: .3px;
 }
 
 .serif {
@@ -38,8 +40,21 @@ h6 {
   letter-spacing: .02em;
 }
 
+.header-link {
+  float: right;
+  margin-right: 10px;
+  color: $black;
+}
+
 .more-link {
   font-size: 12px;
+}
+
+.footer-text {
+  color: $black;
+  line-height: 1.65;
+  letter-spacing: 0.2px;
+  font-size: 11px;
 }
 
 .date {
@@ -49,12 +64,26 @@ h6 {
 
 // Images
 .feature-image {
-  background-position: center;
-  background-size: cover;
   height: 350px;
+  width: 100%;
+  object-fit: cover;
+  // background-position: center;
+  // background-size: cover;
 }
 .article-image {
-  background-position: center;
-  background-size: cover;
   height: 150px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 4px;
+  // background-position: center;
+  // background-size: cover;
+}
+
+.banner-image {
+
+}
+
+// Utilities
+.mb-0 {
+  margin-bottom:0;
 }
