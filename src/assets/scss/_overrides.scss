@@ -90,6 +90,22 @@ p.footer-text {
     margin: 10px 16px 0;
     margin-bottom: 0;
   }
+  .button {
+    padding: 5px 12px;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    background-color: $primary-color;
+    border-radius: 2px;
+    float: right;
+    /* Small only */
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      float: none;
+      display: block;
+      margin-top: 4px;
+    }
+  }
 }
 
 // Utilities
