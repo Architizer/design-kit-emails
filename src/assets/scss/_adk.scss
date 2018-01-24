@@ -1,6 +1,7 @@
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    hyphens: none;
 }
 
 // Grid
@@ -42,6 +43,7 @@ h6 {
 
 p {
   color: $dark-gray;
+  line-height: 1.5;
 }
 
 .serif {
@@ -65,12 +67,66 @@ p.footer-text {
   line-height: 1.65;
   letter-spacing: 0.2px;
   font-size: 11px;
+  text-align: center;
   a {
     color: $black;
   }
 }
 
+.pill {
+  padding: 2px 9px;
+  border-radius: 12px;
+  background-color: $aqua;
+  font-size: 90%;
+  color: $white;
+}
+
+// Font Sizes
+$font-sizes: ( 
+  s: 10px,
+  m: 13px,
+  base: 16px,
+  l: 20px
+);
+
+@each $size, $value in $font-sizes {
+  .fs-#{$size} {
+    font-size: $value;
+  }
+}
+
+// Font Colors
+$font-colors: ( 
+  blue: #2199e8,
+  green: #3ADB76,
+  orange: #ff6908,
+  red: #ec5840,
+  gray: #777777,
+  medium-gray: #cacaca,
+  dark-gray: #5E647D,
+  black: #292D3E,
+  white: #fefefe,
+  quicksilver: #859DAF,
+  gunmetal: #B8C8D1
+);
+
+@each $color, $hex in $font-colors {
+  .#{$color} {
+    color: $hex;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
 // Images
+.logo{
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    margin: 0 auto;
+  }
+}
+
 .feature-image {
   height: 350px;
   width: 100%;
@@ -108,7 +164,37 @@ p.footer-text {
   }
 }
 
+.img-standard {
+    // padding-top: 100%;
+    // height: 130px;
+    // width: 100%;
+    position: relative;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 6px;
+  }
+
+.small-center {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    margin: 0 auto;
+  }
+}
+
+
 // Utilities
 .mb-0 {
   margin-bottom:0;
 }
+
+  //Transparent spacer to use between cards
+.air {
+  background-color: $body-background;
+}
+
+
+
+
+
+
+
