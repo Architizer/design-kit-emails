@@ -18,8 +18,11 @@
 
 $quicksilver: #859DAF;
 $gunmetal: #B8C8D1;
+$blue: #1CA3FC;
+$dark-blue: #2A58BE;
+$aqua: #5CCCB1;
 
-$primary-color: #2199e8;
+$primary-color: $blue;
 $secondary-color: #777777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
@@ -34,7 +37,7 @@ $pre-color: #ff6908;
 
 $global-width: 580px;
 $global-width-small: 95%;
-$global-gutter: 40px;
+$global-gutter: 30px;
 $body-background: $light-gray;
 $container-background: $white;
 $global-padding: 30px;
@@ -74,11 +77,12 @@ $h2-font-size: 28px;
 $h3-font-size: 24px;
 $h4-font-size: 20px;
 $h5-font-size: 18px;
-$h6-font-size: 13px;
+$h6-font-size: 14px;
 $header-margin-bottom: 2px;
 $paragraph-margin-bottom: 10px;
 $small-font-size: 80%;
-$small-font-color: $medium-gray;
+// $small-font-color: inherit;
+$small-font-color: $dark-gray;
 $lead-font-size: $global-font-size * 1.25;
 $lead-line-height: 1.6;
 $text-padding: 10px;
