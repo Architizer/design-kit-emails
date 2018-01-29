@@ -33,12 +33,14 @@ h5 {
   font-family: $body-font-family;
   letter-spacing: 0.3px !important;
   line-height: 1.5;
+  display: inline-block;
 }
 
 h6 {
   font-variant: small-caps;
   text-transform: lowercase;
   letter-spacing: .5px;
+  display: inline-block;
 }
 
 p {
@@ -81,6 +83,10 @@ p.footer-text {
   color: $white;
 }
 
+button {
+  font-weight: 700;
+}
+
 // Font Sizes
 $font-sizes: ( 
   s: 10px,
@@ -112,7 +118,7 @@ $font-colors: (
 
 @each $color, $hex in $font-colors {
   .#{$color} {
-    color: $hex;
+    color: $hex !important;
   }
 }
 
