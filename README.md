@@ -7,7 +7,7 @@ To use the kit, you first need to download and run the kit. To build an email, o
 
 Everytime you save your working file, Inky will compile the HTML for you. When you are done adding your content and you are pleased with the way it looks, go to the '/dist' folder and find the .html file of the same name…this is the compiled version of your email. It might look crazy but it will work. Copy this code (make sure its from the /dist folder!) and take it to test in Litmus (these templates have already been tested so if you added the content correctly then you shouldn't have to worry about the tests, but always run them), and then to Eloqua to finalize content and send it out.
 
-Refer to [Foundation for Emails](http://foundation.zurb.com/emails/docs/") for help setting up your environment, learn about writing in Inky and general documentation. 
+Refer to [Foundation for Emails](http://foundation.zurb.com/emails/docs/) for help setting up your environment, learn about writing in Inky and general documentation. 
 
 ## Foundation for Emails - Installation
 
