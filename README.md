@@ -3,11 +3,24 @@
 
 This kit will allow Architizer designers, engineers and marketers to generate the HTML for our emails in a controlled and consistent mannerthe need to worry about crazy email HTML table structures and browser consistency. The design team will build templates that "just work" and drop them here for you to build without having to worry about styling at all…just get the content in there.
 
-To use the kit, you first need to download and run the kit. To build an email, open the template example from the 'src/pages' folder in your text editor and replace the placeholder content and links with the new content. You'll notice no tables or any crazy HTML. That's because these are written in a compiler called Inky, which compiles the finished email to the appropriate HTML. Using Inky allows us to read the code more clearly so we can see exactly where to add and edit content without error and allows us to troubleshoot better as well. Don't edit any styles, spacing, color, or anything, all of this should have been setup by the design team, so if you need anything changed then ask them.
+### Design to Engineering Process / Handoff
+1. Design emails in Sketch
+2. Once design is more or less locked, move to this kit and code the email with the Inky language inside the /src/pages folder. 
 
-Everytime you save your working file, Inky will compile the HTML for you. When you are done adding your content and you are pleased with the way it looks, go to the '/dist' folder and find the .html file of the same name…this is the compiled version of your email. It might look crazy but it will work. Copy this code (make sure its from the /dist folder!) and take it to test in Litmus (these templates have already been tested so if you added the content correctly then you shouldn't have to worry about the tests, but always run them), and then to Eloqua to finalize content and send it out.
+   It's probably best to copy an existing file that closely matches your email and start from there, rather than building from scratch every time. 
 
-Refer to [Foundation for Emails](http://foundation.zurb.com/emails/docs/) for help setting up your environment, learn about writing in Inky and general documentation. 
+   Use `npm start` to just run the local server and watch your code changes in the browser, or use `npm run build` to watch in the browser and compile the email to full HTML inside the /dist folder.
+3. When the email is ready to test, compile it with `npm run build` and copy the raw html from the /dist folder.
+4. Format the email using a tool like [FreeFormatter](https://www.freeformatter.com/html-formatter.html)
+5. Paste the formatted html into a new project in [Litmus](https://litmus.com/dashboard)
+6. Test the email in Litmus across our most used clients
+7. Troubleshoot the email for different clients by repeating the above steps (edit template, recompile, repaste). 
+8. Once you have the raw html of the email working well across clients in Litmus, publish the Litmus project and add the link to the Dev ticket to handoff to the engineers. 
+9. Push your new template to the repo!
+
+   Alternatively you can make the edits directly to the code in Litmus, but it would be good practice to do it in this repo so that it can always be compiled to work properly
+
+Refer to [Foundation for Emails](http://foundation.zurb.com/emails/docs/) for help setting up your environment, to learn about writing in Inky and general documentation. 
 
 ## Foundation for Emails - Installation
 
