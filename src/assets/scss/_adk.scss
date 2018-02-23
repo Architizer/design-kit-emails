@@ -1,8 +1,8 @@
-* {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    hyphens: none;
-}
+// * {
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+//     hyphens: none;
+// }
 
 // Grid
 td.columns,
@@ -14,6 +14,10 @@ th.column {
 
 .container.transparent {
   background-color: transparent;
+}
+
+.bg-body {
+  background-color: $body-background;
 }
 
 hr {
@@ -54,6 +58,12 @@ p {
   letter-spacing: .02em;
 }
 
+.smallcaps {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.3px !important;
+}
+
 .header-link {
   float: right;
   margin-left: 10px;
@@ -84,7 +94,7 @@ p.footer-text {
 }
 
 button {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 // Font Sizes
